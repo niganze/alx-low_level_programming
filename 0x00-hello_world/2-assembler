@@ -1,2 +1,0 @@
-#!/bin/bash
- $CFILE=2-main.s ; ./2-assembler
