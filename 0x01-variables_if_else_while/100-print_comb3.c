@@ -2,12 +2,12 @@
 /**
  * main - entry point 
  *
- *Return: always return 0
+ *Return: Always 0 (Success/completed)
  *
  */
  int main(void)
 {
-int i;j;
+int i,j;
 i = 48;
 j = 48;
 while (i < 58)
