@@ -25,6 +25,8 @@ void print_times_table(int n);
 
 void times_table(void);
 
+int print_last_digit(int);
+
 void print_alphabet(void);
 
 int add(int a, int b);
