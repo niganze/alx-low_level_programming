@@ -1,26 +1,22 @@
 #include "main.h"
 
 /**
- *
- *main - check the code for Holberton School students.
+ * print_alphabet - check the code for main School students.
  *
  * Return: Always 0.
- *
  */
 
 void print_alphabet(void)
-
 {
-	char alphabet;
+	char alp = 'a';
 
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	while (alp <= 'z')
 	{
-		_putchar(alphabet);
+		_putchar (alp);
+		alp++;
+
 	}
-
-		print_alphabet();
-
-			return (0);
+	_putchar ('\n');
 
 }
