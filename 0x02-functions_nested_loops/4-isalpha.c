@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _isalpha - ckecks for  alphabetic character
- * @c: takes in a character
- *
- * Returns: 1 if c is a letter, lowercase or uppercase otherwise 0
- */
+ *_isalpha - check the code for Holberton School students.
+
+*@c: is c an integer argument
+*
+*Return: Always 0.
+*/
 
 int _isalpha(int c)
 {
