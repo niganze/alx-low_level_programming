@@ -2,7 +2,7 @@
 
 /**
  * main - check the code for Holberton School students.
- *
+ *@n: number being tested
  * Return: Always 0.
  */
 int print_last_digit(int)
