@@ -1,44 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - sums 3-5_cous - Entry point
+ * main - sums nultplies of 3 or 5
  *
- * Return:  (0)
+ * Description: multiples between 0 and 1024
+ * Return: Always(0) Success
  */
-
 int main(void)
 {
-	int i = 0;
-	int m3 = 3;
-	int m5 = 5;
-	int sum = 0;
-	int lim = 1024;
+	int start_num, end_num, total;
 
-	while (i == 0)
+	end_num = 1024;
+	total = 0;
+
+	for (start_num = 0; start_num < end_num; start_num++)
 	{
-
-		if (m3 < lim)
+		if ((start_num % 3 == 0) || (start_num % 5 == 0))
 		{
-			sum += m3;
-			m3 += 3;
+			total = total + start_num;
 		}
-
-		if (m5 < lim && (m5 % 3) != 0)
+		else
 		{
-			sum += m5;
-			m5 += 5;
-		}
-		else if (m5 % 3 == 0)
-		{
-			m5 += 5;
-		}
-		if (m3 >= lim && m5 >= lim)
-		{
-			i = 1;
+			continue;
 		}
 	}
-	printf("%d\n", sum);
+
+	printf("%d", total);
+	printf("\n");
+
 	return (0);
 }
-	
-	
