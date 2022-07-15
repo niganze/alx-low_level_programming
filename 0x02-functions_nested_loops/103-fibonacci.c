@@ -1,32 +1,26 @@
 #include <stdio.h>
-
 /**
- * main -entry point 
+ * main - prints the sum of the even-valued terms. 
  *
- * purpose - fibonacci
- *
- * Return: (0) always
+ * Description: Print the sum of even Fibonacci numbers up to a fib value
+ *not exceeding 4,000,000.
+ * Return: 0
  */
 int main(void)
 {
-	unsigned long int lim = 4000000;
-	unsigned long int bef = 0;
-	unsigned long int aft = 1;
-	unsigned long int R = 0;
-	unsigned long int sum = 0;
+	int i = 1, j = 2, total = 0;
+	int k;
 
-	while (lim > R)
+
+	while (j < 4000000)
 	{
-		R = bef + aft;
-
-		if ((R % 2) == 0)
-		{
-			sum += R;
-		}
-
-		bef = aft;
-		aft = R;
+		if (j % 2 == 0)
+			total += j;
+		k = j;
+		j += i;
+		i = k;
 	}
-	printf("%li\n", sum);
+	printf("%d\n", total);
 	return (0);
 }
+
