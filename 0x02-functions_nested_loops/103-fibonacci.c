@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the sum of the even-valued terms. 
+ * main - prints the sum of the even-valued terms.
  *
  * Description: Print the sum of even Fibonacci numbers up to a fib value
  *not exceeding 4,000,000.
